@@ -12,10 +12,10 @@
 
         function cadastraNotas() {
             let notas = [],
-                quantidade = +prompt("Digite a quantidade de notas")
+                quantidade = prompt("Digite a quantidade de notas")
 
             for (let i = 0; i < 3; i++) {
-                notas[i] = +prompt(`Digite a ${i + 1} nota`)
+                notas[i] = prompt(`Digite a ${i + 1} nota`)
             }
             
             return notas
@@ -24,7 +24,7 @@
         function calculaMedia(notas) {
             let somaNotas = 0
             for (let nota of notas) {
-                somaNotas += nota
+                somaNotas = nota
             }
             
             return somaNotas / notas.length
